@@ -216,3 +216,32 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Ignore Local Environments and Credentials
+.env
+.env.*
+secrets/
+*key*
+*token*
+
+# Ignore Databases
+*.sqlite3
+*.sqlite3-journal
+*.db
+
+# Ignore IDE / OS Metadata
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore Dockase System Internals / Trade Secrets
+# (Make sure not to upload core Django views, scraping engines, or database schema models)
+ai_engine/services/
+ai_engine/tasks.py
+billing/
+legal/
+lead_engine/
+knowledge_base/
+workflows/
